@@ -60,10 +60,12 @@
 .section-title{
     color: $font-light-color;
     margin: 0 2em;
+    font-size: 24px;
+    line-height: 34px;
 }
 
 // Button
-.btn-cv{
+.btn-primary, .btn-archive, .btn-resume{
     color: $second-color;
     font-weight: 600;
     font-size: 16px;
@@ -75,12 +77,12 @@
     position: relative;
     outline: none;
 }
-.btn-cv:hover {
+.btn-primary:hover, .btn-archive:hover, .btn-resume:hover {
     cursor: pointer;
     border: 2px solid $second-color;
     color: #000;
 }
-.round {
+.round, .round-2, .round-3{
     border-radius: 50%;
     background-color: $second-color;
     position: absolute;
@@ -90,7 +92,7 @@
     animation: scale-down 0.9s forwards;
 }
 
-.animate .round {
+.animate .round, .animate-archive .round-2, .animate-resume .round-3 {
     animation: scale-up .9s forwards;
 }
 

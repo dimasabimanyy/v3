@@ -228,7 +228,7 @@ main {
 }
 
 #knowledge {
-  margin-bottom: 8em;
+  margin-bottom: 7em;
   padding: 2em 0;
 }
 
@@ -263,7 +263,14 @@ main {
 }
 
 #work {
-  padding: 2em 0;
+  margin-bottom: 8em;
+  padding-bottom: 2em;
+}
+
+#work .archive-projects-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #work .work-wrap {
@@ -368,13 +375,58 @@ main {
   padding-right: 2em;
 }
 
-footer {
+#contact {
+  margin-bottom: 8em;
+}
+
+#contact .contact-wrap {
+  margin: 2em 0;
   width: 100%;
-  height: 100px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: #101010;
+  grid-gap: 5em;
+}
+
+#contact .contact-wrap .contact-box {
+  z-index: 999;
+  background-color: #101010;
+  border: 1px solid #242424;
+  padding: 5em 1em;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+}
+
+#contact .contact-wrap .contact-box i {
+  font-size: 36px;
+  line-height: 36px;
+  color: #4BFFA5;
+  margin-bottom: .3em;
+}
+
+#contact .contact-wrap .contact-box h5 {
+  color: #FFFFFF;
+  font-size: 16px;
+  line-height: 26px;
+  margin-bottom: .4em;
+}
+
+#contact .contact-wrap .contact-box p {
   text-align: center;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+footer .footer-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 8em;
+  z-index: 999;
+  border: 1px solid #242424;
 }
 
 @media screen and (max-width: 950px) {
@@ -511,9 +563,11 @@ nav .toggle .line3 {
 .section-title {
   color: #FFFFFF;
   margin: 0 2em;
+  font-size: 24px;
+  line-height: 34px;
 }
 
-.btn-cv {
+.btn-primary, .btn-archive, .btn-resume {
   color: #4BFFA5;
   font-weight: 600;
   font-size: 16px;
@@ -526,13 +580,13 @@ nav .toggle .line3 {
   outline: none;
 }
 
-.btn-cv:hover {
+.btn-primary:hover, .btn-archive:hover, .btn-resume:hover {
   cursor: pointer;
   border: 2px solid #4BFFA5;
   color: #000;
 }
 
-.round {
+.round, .round-2, .round-3 {
   border-radius: 50%;
   background-color: #4BFFA5;
   position: absolute;
@@ -542,7 +596,7 @@ nav .toggle .line3 {
   animation: scale-down 0.9s forwards;
 }
 
-.animate .round {
+.animate .round, .animate-archive .round-2, .animate-resume .round-3 {
   animation: scale-up .9s forwards;
 }
 
