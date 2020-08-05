@@ -179,7 +179,7 @@ main {
   border-bottom: 1px solid #242424;
   background: #101010;
   position: relative;
-  padding: 3em 2.5em;
+  padding: 3em 2em;
 }
 
 #about .about-img {
@@ -242,7 +242,7 @@ main {
   border-bottom: 1px solid #242424;
   background: #101010;
   position: relative;
-  padding: 3em 2.5em;
+  padding: 3em 2em;
   width: 100%;
 }
 
@@ -273,18 +273,6 @@ main {
   border-bottom: 1px solid #242424;
 }
 
-#work .work-wrap h3 {
-  font-size: 1.5em;
-  font-weight: bold;
-  color: #FFFFFF;
-  margin-bottom: 2em;
-}
-
-#work .work-wrap h3 span {
-  color: #4BFFA5;
-  font-family: "Roboto", sans-serif;
-}
-
 #work .work-wrap .project-wrap {
   width: 100%;
   display: flex;
@@ -295,7 +283,7 @@ main {
   background-color: #101010;
   z-index: 999;
   padding: 3em 0;
-  padding-left: 2.5em;
+  padding-left: 2em;
 }
 
 #work .work-wrap .project-wrap .image-project {
@@ -313,61 +301,62 @@ main {
 #work .work-wrap .project-wrap .info-project {
   z-index: 999;
   background-color: #101010;
-  position: absolute;
-  right: 0;
-  top: 0;
   min-height: 100%;
   width: 45%;
   text-align: right;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-right: 2.5em;
+  text-align: center;
+  padding-right: 2em;
+  padding-left: 2em;
 }
 
 #work .work-wrap .project-wrap .info-project h5 {
-  font-size: 1.5em;
-  margin-bottom: .5em;
+  font-size: 20px;
+  margin-bottom: 1em;
   color: #FFFFFF;
 }
 
 #work .work-wrap .project-wrap .info-project .desc-project {
   font-family: "Roboto", sans-serif;
-  padding: 1.2em;
   margin-bottom: 1em;
-  border-radius: .1em;
-  font-size: .95em;
-  line-height: 1.45em;
+  font-size: 16px;
+  line-height: 26px;
 }
 
 #work .work-wrap .project-wrap .info-project .tech-use {
-  width: 70%;
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-end;
-  float: right;
+  text-align: center;
+  justify-content: center;
   font-family: "Roboto", sans-serif;
-  font-size: .9em;
-  margin-bottom: 1em;
+  font-size: 16px;
+  margin-bottom: 1.5em;
   color: #4BFFA5;
-  align-self: flex-end;
+  font-weight: 500;
 }
 
-#work .work-wrap .project-wrap .info-project .tech-use p {
-  margin: 0 1em;
-  line-height: 1.7em;
-  font-weight: bold;
+#work .work-wrap .project-wrap .info-project .tech-use ul {
+  display: inline-flex;
+  list-style: none;
+}
+
+#work .work-wrap .project-wrap .info-project .tech-use ul li {
+  margin-left: 1em;
 }
 
 #work .work-wrap .project-wrap .info-project .project-source {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
 }
 
 #work .work-wrap .project-wrap .info-project .project-source a {
   color: #afafaf;
-  font-size: 1.5em;
-  margin: 0 .5em;
+  font-size: 1.4em;
+  margin: 0 .3em;
+  color: #FFFFFF;
 }
 
 #work .work-wrap .project-wrap .info-project .project-source a:hover {
@@ -376,21 +365,7 @@ main {
 
 #work .work-wrap .right-image {
   flex-direction: row-reverse;
-}
-
-#work .work-wrap .right-image .info-project {
-  left: 0;
-  text-align: left;
-}
-
-#work .work-wrap .right-image .info-project .tech-use {
-  width: 70%;
-  align-self: flex-start;
-  justify-content: flex-start;
-}
-
-#work .work-wrap .right-image .info-project .project-source {
-  justify-content: flex-start;
+  padding-right: 2em;
 }
 
 footer {
