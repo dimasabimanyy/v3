@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+
+$font-stack: 'Roboto', sans-serif;
+$primary-color: #0D0D0D;
+$second-color: #4BFFA5;
+$font-dark-color: #afafaf; 
+$font-light-color: #FFFFFF;
+$body-color:#101010;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: $font-stack;
+    background-color: $body-color;
+    color: $font-dark-color;
+    overflow-x: hidden;
+}
+a{
+    text-decoration: none;
+}

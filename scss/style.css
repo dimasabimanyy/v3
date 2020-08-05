@@ -1,1 +1,367 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #101010;
+  color: #afafaf;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  background-color: #0D0D0D;
+}
+
+header .header-left-info {
+  position: fixed;
+  bottom: 7%;
+  left: 3%;
+}
+
+header .header-left-info p {
+  font-size: 14px;
+  line-height: 28px;
+  color: #bbb;
+}
+
+header .header-right-info {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  bottom: 7%;
+  right: 3%;
+  align-items: center;
+}
+
+header .header-right-info p {
+  transform: rotate(90deg);
+  margin-bottom: 3em;
+  font-size: 15px;
+  color: #afafaf;
+}
+
+header .header-right-info li {
+  list-style: none;
+  margin: .8em 0;
+}
+
+header .header-right-info li i {
+  font-size: 1em;
+  color: #afafaf;
+  transition: .3s ease-in;
+}
+
+header .header-right-info li i:hover {
+  color: #4BFFA5;
+  transform: translateY(-0.2em);
+}
+
+header .header-right-info .standing-line-right {
+  height: 3em;
+  width: 1px;
+  margin-bottom: 1em;
+  background-color: #FFFFFF;
+}
+
+header nav {
+  position: relative;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  transition: .7s ease-in-out;
+  background-color: #0D0D0D;
+  height: 8em;
+  padding: 0 3%;
+  z-index: 999;
+}
+
+header nav .logo {
+  position: relative;
+  transition: .6s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header nav .logo a {
+  color: #afafaf;
+  font-weight: 700;
+  font-size: 17px;
+}
+
+header nav .logo a span {
+  color: #FFFFFF;
+}
+
+header nav .nav-links .nav-links-wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 16px;
+}
+
+header nav .nav-links .nav-links-wrap li {
+  list-style: none;
+  margin-left: 3rem;
+}
+
+header nav .nav-links .nav-links-wrap li a:hover {
+  color: #FFFFFF;
+}
+
+header nav .nav-links .nav-links-wrap li a {
+  color: #afafaf;
+  font-weight: 700;
+}
+
+header nav .nav-links .nav-links-wrap li button a {
+  color: #4BFFA5;
+}
+
+header nav .burger {
+  display: none;
+}
+
+header nav .burger div {
+  width: 30px;
+  height: 2px;
+  background-color: #FFFFFF;
+  margin: 7px;
+  transition: all 0.3s;
+}
+
+header .sticky {
+  padding: 10px 5%;
+}
+
+#hero {
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  padding: 0 2em;
+}
+
+#hero h1 {
+  font-size: 44px;
+  line-height: 61px;
+  color: #FFFFFF;
+  z-index: 999;
+}
+
+#hero h1 span {
+  color: #4BFFA5;
+}
+
+main {
+  padding: 3em 0;
+}
+
+#about {
+  margin-bottom: 10em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  z-index: 999;
+  border-top: 1px solid #242424;
+  border-bottom: 1px solid #242424;
+  background: #101010;
+  position: relative;
+  padding: 3em 1em;
+}
+
+#about .about-img {
+  width: 27%;
+  height: 180px;
+  z-index: 999;
+}
+
+#about .about-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#about .about-desc {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+#about .about-desc .about-info-flex {
+  display: flex;
+}
+
+#knowledge {
+  margin: 3em 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  z-index: 999;
+  border-top: 1px solid #242424;
+  border-bottom: 1px solid #242424;
+  background: #101010;
+  position: relative;
+  padding: 3em 1em;
+}
+
+#knowledge .knowledge-wrap {
+  display: flex;
+  width: 100%;
+  background: maroon;
+}
+
+#knowledge .knowledge-wrap ul {
+  width: 50%;
+  list-style: none;
+}
+
+footer {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+@media screen and (max-width: 950px) {
+  nav .nav-links {
+    position: absolute;
+    width: 50%;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    background-color: #0D0D0D;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    transform: translateX(100%);
+    transition: transform .5s ease-in-out;
+    z-index: 9;
+  }
+  nav .nav-links .nav-links-wrap {
+    height: 70%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  nav .nav-links .nav-links-wrap li a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.1em;
+  }
+  nav .nav-links .nav-links-wrap li a .number-nav {
+    font-size: .9em;
+  }
+  nav .burger {
+    display: block;
+    cursor: pointer;
+    z-index: 99;
+  }
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+nav .nav-active {
+  transform: translateX(0%);
+}
+
+nav .toggle .line1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+nav .toggle .line2 {
+  opacity: 0;
+}
+
+nav .toggle .line3 {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
+.container {
+  width: 60%;
+  margin: 0 auto;
+  position: relative;
+  border-left: 1px solid #242424;
+  border-right: 1px solid #242424;
+}
+
+.container:before {
+  content: '';
+  width: 1px;
+  height: 100%;
+  background: #242424;
+  position: absolute;
+  left: 30%;
+  top: 0;
+  z-index: 1;
+}
+
+.container:after {
+  content: '';
+  width: 1px;
+  height: 100%;
+  background: #242424;
+  position: absolute;
+  right: 30%;
+  top: 0;
+  z-index: 1;
+}
+
+.container-fluid {
+  width: 95%;
+  margin: 0 auto;
+  position: relative;
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    width: 85%;
+    margin: 0 auto;
+  }
+  .container-fluid {
+    width: 95%;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    width: 85%;
+    margin: 0 auto;
+  }
+  .container-fluid {
+    width: 95%;
+    margin: 0 auto;
+  }
+}
+/*# sourceMappingURL=style.css.map */
