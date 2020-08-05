@@ -7,6 +7,8 @@
 	<link rel="stylesheet" href="scss/style.css">
 	<!-- Font awesome -->
 	<script src="https://kit.fontawesome.com/2b296c63cf.js" crossorigin="anonymous"></script>
+	<!-- Jquery -->
+	<script src="js/jquery.3.5.1.js"></script>
 </head>
 <body>
 
@@ -44,20 +46,23 @@
 				</a>
 		</div>
 		<ul class="nav-links">
-				<div class="nav-links-wrap">
-						<li>
-								<a href="#about">About</a>
-						</li>
-						<li>
-								<a href="#work">Work</a>
-						</li>
-						<li>
-								<a href="#featured-project">Featured Project</a>
-						</li>
-						<li>
-								<a href="#contact">Contact</a>
-						</li>
-				</div>
+			<div class="nav-links-wrap">
+				<li>
+					<a href="#about">About</a>
+				</li>
+				<li>
+					<a href="#work">Work</a>
+				</li>
+				<li>
+					<a href="#featured-project">Featured Project</a>
+				</li>
+				<li>
+					<a href="#contact">Contact</a>
+				</li>
+				<li>
+					<a href="" class="btn-resume">Resume</a>
+				</li>
+			</div>
 		</ul>
 		<div class="burger">
 				<div class="line1"></div>
@@ -70,7 +75,7 @@
 	<!-- Start Hero -->
 	<section id="hero" class="container">
 		<h1>
-			Hello, I’m <span>Dimas Abimanyu</span>, UX/UI Designer and Front-end Developer Based in San Francisco.</h1>
+			Hello, I’m <span>Dimas Abimanyu</span>, UX/UI Designer and Front-end Developer Based in Medan, Indonesia.</h1>
 			<p class="hero-typing"></p>
 	</section>
 	<!-- End Hero -->
@@ -79,69 +84,133 @@
 <!-- End Header -->
 
 <!-- Start main content -->
-<main class="container">
+<main class="container-strip">
 	<section id="about">
 		<div class="about-img">
 			<img src="images/me.jpg" alt="Foto Dimas Abimanyu">
 		</div>
 		<div class="about-desc">
-			<p>Hello! I’m Daniel Curry. Web designer from USA, California, San Francisco. I have rich experience in web site design and building, also I am good at wordpress. I love to talk with you about our unique.</p>
+			<p>Hello! I’m Dimas Abimanyu. Web designer from USA, California, San Francisco. I have rich experience in web site design and building, also I am good at wordpress. I love to talk with you about our unique.</p>
 			<div class="about-info-flex">
-				<div>
-					<span>Age:</span> 24
-					<span>Residence:</span> USA
-					<span>Freelance:</span> Available
+				<div class="about-list">
+					<ul>
+						<li><span>Age:</span> 24 </li>
+						<li><span>Residence:</span> USA </li>
+						<li><span>Freelance:</span> Available </li>
+					</ul>
 				</div>
-				<div>
-					<span>Address:</span> San Francisco, USA
-				<span>Phone:</span> +1 256 254 84 56
+				<div class="about-list">
+					<ul>
+						<li><span>Address:</span> San Francisco, USA </li>
+						<li><span>Phone:</span> +1 256 254 84 56 </li>
+					</ul>
 				</div>
 			</div>
+			<a href=""><button class="btn-cv spread-effect">Download CV<span class="round" /></button></a>
 		</div>
 	</section>
 
 	<!-- Start knowledge -->
 	<section id="knowledge">
-		Knowledge
+		<h1 class="section-title">Knowledge</h1>
 		<div class="knowledge-wrap">
 			<ul>
 				<li>
 					<i class="fa fa-check"></i>
-					 Website hosting</li>
+					 Website hosting
+				</li>
 				<li>
 					<i class="fa fa-check"></i>
-					 iOS and android apps</li>
+					 iOS and android apps
+				</li>
 				<li>
 					<i class="fa fa-check"></i>
-					 Create logo design</li>
+					 Create logo design
+				</li>
 				<li>
 					<i class="fa fa-check"></i>
-					 Design for print</li>
+					 Design for print
+				</li>
 			</ul>
 			<ul>			
 				<li>
 					<i class="fa fa-check"></i>
-					 Modern and mobile-ready</li>
+					 Modern and mobile-ready
+				</li>
 				<li>
 					<i class="fa fa-check"></i>
-					 Advertising services include</li>
+					 Advertising services include
+				</li>
 				<li>
 					<i class="fa fa-check"></i>
-					 Graphics and animations</li>
+					 Graphics and animations
+				</li>
 				<li>
 					<i class="fa fa-check"></i>
-					 Search engine marketing</li>
+					 Search engine marketing
+				</li>
 			</ul>
 		</div>
 	</section>
 	<!-- End knowledge -->
+
+	<!-- Start my projects -->
+	<section id="work">
+		<h1 class="section-title">
+			My Projects
+		</h1>
+		<div class="work-wrap">
+			<div class="project-wrap left-image">
+				<div class="image-project">
+					<img src="images/Projects/project-1.png" alt="Project 1">
+				</div>
+				<div class="info-project">
+					<h5>Octo Profile</h5>
+					<div class="desc-project">
+						A nicer look at your GitHub profile and repo stats. Includes data visualizations of your top languages.
+					</div>
+					<div class="tech-use">
+						<p>Next.js</p>
+						<p>Chart.js</p>
+						<p>Github API</p>
+					</div>
+					<div class="project-source">
+						<a href="https://github.com/dimasabimanyy" target="_blank"><i class="fa fa-github"></i></a>
+						<a href="https://github.com/dimasabimanyy" target="_blank"><i class="fa fa-external-link-alt"></i></a>
+					</div>
+				</div>
+			</div>
+	
+			<div class="project-wrap right-image">
+				<div class="image-project">
+					<img src="images/Projects/project-1.png" alt="Project 1">
+				</div>
+				<div class="info-project">
+					<h5>Octo Profile</h5>
+					<div class="desc-project">
+						A nicer look at your GitHub profile and repo stats. Includes data visualizations of your top languages, starred repositories, and sort through your top repos by number of stars, forks, and size.
+					</div>
+					<div class="tech-use">
+						<p>Next.js</p>
+						<p>Chart.js</p>
+						<p>Github API</p>
+					</div>
+					<div class="project-source">
+						<a href="https://github.com/dimasabimanyy" target="_blank"><i class="fa fa-github"></i></a>
+						<a href="https://github.com/dimasabimanyy" target="_blank"><i class="fa fa-external-link-alt"></i></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Start my projects -->
 		
 </main>
 <!-- End main content -->
 
 
 <!-- Start footer -->
-<footer class="container">
+<footer class="container-strip">
 	Dimas Abimanyu
 </footer>
 <!-- End footer -->

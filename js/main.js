@@ -6,39 +6,39 @@ window.addEventListener("scroll", function(){
   
   
   // Button Hover Effect
-  let button = document.querySelector(".primary-button");
-  let item = document.querySelector(".primary-button .round");
+  let button = document.querySelector(".spread-effect");
+  let item = document.querySelector(".spread-effect .round");
   
-//   button.addEventListener("mouseenter", function(event) {
-//     this.classList += " animate";
+  button.addEventListener("mouseenter", function(event) {
+    this.classList += " animate";
   
-//     let buttonX = event.offsetX;
-//     let buttonY = event.offsetY;
+    let buttonX = event.offsetX;
+    let buttonY = event.offsetY;
   
-//     if (buttonY < 24) {
-//       item.style.top = 0 + "px";
-//     } else if (buttonY > 30) {
-//       item.style.top = 48 + "px";
-//     }
+    if (buttonY < 24) {
+      item.style.top = 0 + "px";
+    } else if (buttonY > 30) {
+      item.style.top = 48 + "px";
+    }
   
-//     item.style.left = buttonX + "px";
-//     item.style.width = "1px";
-//     item.style.height = "1px";
-//   });
+    item.style.left = buttonX + "px";
+    item.style.width = "1px";
+    item.style.height = "1px";
+  });
   
-//   button.addEventListener("mouseleave", function() {
-//     this.classList.remove("animate");
+  button.addEventListener("mouseleave", function() {
+    this.classList.remove("animate");
   
-//     let buttonX = event.offsetX;
-//     let buttonY = event.offsetY;
+    let buttonX = event.offsetX;
+    let buttonY = event.offsetY;
   
-//     if (buttonY < 24) {
-//       item.style.top = 0 + "px";
-//     } else if (buttonY > 30) {
-//       item.style.top = 48 + "px";
-//     }
-//     item.style.left = buttonX + "px";
-//   });
+    if (buttonY < 24) {
+      item.style.top = 0 + "px";
+    } else if (buttonY > 30) {
+      item.style.top = 48 + "px";
+    }
+    item.style.left = buttonX + "px";
+  });
   
   // Navigation
   const navSlide = () => {

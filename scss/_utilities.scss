@@ -2,10 +2,15 @@
     width: 60%;
     margin: 0 auto;
     position: relative;
+}
+.container-strip{
+    width: 60%;
+    margin: 0 auto;
+    position: relative;
     border-left: 1px solid #242424;
     border-right: 1px solid #242424;
 }
-.container:before{
+.container-strip:before{
     content: '';
     width: 1px;
     height: 100%;
@@ -15,7 +20,7 @@
     top: 0;
     z-index: 1;
 }
-.container:after{
+.container-strip:after{
     content: '';
     width: 1px;
     height: 100%;
@@ -25,28 +30,81 @@
     top: 0;
     z-index: 1;
 }
-.container-fluid{
+.container-strip-fluid{
     width: 95%;
     margin: 0 auto;
     position: relative;
 }
 @media only screen and (max-width: 768px){
-    .container{
+    .container-strip{
         width: 85%;
         margin: 0 auto;
     }
-    .container-fluid{
+    .container-strip-fluid{
         width: 95%;
         margin: 0 auto;
     }
 }
 @media only screen and (max-width: 600px){
-    .container{
+    .container-strip{
         width: 85%;
         margin: 0 auto;
     }
-    .container-fluid{
+    .container-strip-fluid{
         width: 95%;
         margin: 0 auto;
+    }
+}
+
+// Title
+.section-title{
+    color: $font-light-color;
+    margin: 0 2em;
+}
+
+// Button
+.btn-cv{
+    color: $second-color;
+    font-weight: 600;
+    font-size: 16px;
+    border: 2px solid $second-color;
+    background: transparent;
+    padding: .5em 1em;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    outline: none;
+}
+.btn-cv:hover {
+    cursor: pointer;
+    border: 2px solid $second-color;
+    color: #000;
+}
+.round {
+    border-radius: 50%;
+    background-color: $second-color;
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    z-index: -1;
+    animation: scale-down 0.9s forwards;
+}
+
+.animate .round {
+    animation: scale-up .9s forwards;
+}
+
+@keyframes scale-up {
+    to {
+        transform: scale(600);
+    }
+}
+
+@keyframes scale-down {
+    from {
+        transform: scale(600);
+    }
+    to {
+        ransform: scale(0);
     }
 }

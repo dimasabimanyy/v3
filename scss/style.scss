@@ -56,7 +56,7 @@ header{
         align-items: center;
         transition: .7s ease-in-out;
         background-color: $primary-color;
-        height: 8em;
+        height: 20vh;
         padding: 0 3%;
         z-index: 999;
         .logo{
@@ -120,9 +120,7 @@ header{
     }
 }
 #hero{
-    // margin-top: 8em;
-    // background: maroon;
-    height: 70vh;
+    height: 80vh;
     display: flex;
     align-items: center;
     padding: 0 2em;
@@ -143,7 +141,7 @@ main{
 }
 // Start about
 #about{
-    margin-bottom:10em;
+    margin-bottom: 8em;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -152,10 +150,9 @@ main{
     border-bottom: 1px solid #242424;
     background: $body-color;
     position: relative;
-    padding: 3em 1em;
-    // background: aqua;
+    padding: 3em 2.5em;
     .about-img{
-        width: 27%;
+        width: 22%;
         height: 180px;
         z-index: 999;
         img{
@@ -165,39 +162,181 @@ main{
         }
     }
     .about-desc{
-        width: 70%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+        width: 75%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 1em;
         z-index: 999;
+        font-size: 16px;
+        line-height: 26px;
         .about-info-flex{
             display: flex;
+            width: 100%;
+            .about-list{
+                width: 50%;
+                font-size: 16px;
+                line-height: 26px;
+                ul{
+                    list-style: none;
+                    li{
+                        margin-bottom: .2em;
+                    }
+                    span{
+                        color: $second-color
+                    }
+                }
+                
+            }
         }
     }
 }
 
 // Start knowledge
 #knowledge{
-    margin: 3em 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    z-index: 999;
-    border-top: 1px solid #242424;
-    border-bottom: 1px solid #242424;
-    background: $body-color;
-    position: relative;
-    padding: 3em 1em;
+    margin-bottom: 8em;
+    padding: 2em 0;
     .knowledge-wrap{
+        margin: 2em 0;
         display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        z-index: 999;
+        border-top: 1px solid #242424;
+        border-bottom: 1px solid #242424;
+        background: $body-color;
+        position: relative;
+        padding: 3em 2.5em;
         width: 100%;
-        background: maroon;
         ul{
             width: 50%;
             list-style:none;
+            li{
+                margin-bottom: .9em;
+                color: $font-light-color;
+                font-weight: 500;
+            }
+            i{
+                color: $second-color;
+                margin-right: .7em;
+            }
         }
     }
+}
+
+//Start work projects
+#work{
+    padding: 2em 0;
+    .work-wrap{
+        margin: 2em 0;
+        width: 100%;
+        border-top: 1px solid #242424;
+        border-bottom: 1px solid #242424;
+        h3{
+            font-size: 1.5em;
+            font-weight: bold;
+            color: $font-light-color;
+            margin-bottom: 2em;
+            span{
+                color: $second-color;
+                font-family: $font-stack;
+            }
+        }
+        .project-wrap{
+            width: 100%;
+            display: flex;
+            position: relative;
+            flex-wrap: wrap;
+            border-top: 1px solid #242424;
+            border-bottom: 1px solid #242424;
+            background-color: $body-color;
+            z-index: 999;
+            padding: 3em 0;
+            padding-left: 2.5em;   
+            .image-project{
+                width: 55%;
+                min-height: 17em;
+                z-index: 999;
+                img{
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+            .info-project{
+                z-index: 999;
+                background-color:$body-color;
+                position: absolute;
+                right: 0;
+                top: 0;
+                min-height: 100%;
+                width: 45%;
+                text-align: right;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                padding-right: 2.5em;
+                h5{
+                    font-size: 1.5em;
+                    margin-bottom: .5em;
+                    color: $font-light-color;
+                }
+                .desc-project{
+                    // background: #172A45;
+                    font-family: $font-stack;
+                    padding: 1.2em;
+                    margin-bottom: 1em;
+                    border-radius: .1em;
+                    font-size: .95em;
+                    line-height: 1.45em;
+                }
+                .tech-use{
+                    width: 70%;
+                    display: flex;
+                    flex-wrap: wrap;
+                    // background-color: maroon;
+                    justify-content: flex-end;
+                    float: right;
+                    font-family: $font-stack;
+                    font-size: .9em;
+                    margin-bottom: 1em;
+                    color: $second-color;
+                    align-self: flex-end;
+                    p{
+                        margin: 0 1em;
+                        line-height: 1.7em;
+                        font-weight: bold;
+                    }
+                }
+                .project-source{
+                    display: flex;
+                    justify-content: flex-end;
+                    a{
+                        color: $font-dark-color;
+                        font-size: 1.5em;
+                        margin: 0 .5em;
+                    }
+                    a:hover{
+                        color: $second-color;
+                    }
+                }
+            }
+        }
+        .right-image{
+            flex-direction: row-reverse;
+            .info-project{
+                left: 0;
+                text-align: left;
+                .tech-use{
+                    width: 70%;
+                    align-self: flex-start;
+                    justify-content: flex-start;
+                }
+                .project-source{
+                    justify-content: flex-start;
+                }
+            }
+        }    
+    }	
 }
 
 // Start footer
