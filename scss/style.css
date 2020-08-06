@@ -72,7 +72,7 @@ header .header-right-info .standing-line-right {
 }
 
 header nav {
-  position: relative;
+  position: fixed;
   top: 0;
   left: 0;
   display: flex;
@@ -83,7 +83,7 @@ header nav {
   background-color: #0D0D0D;
   height: 20vh;
   padding: 0 3%;
-  z-index: 999;
+  z-index: 9999;
 }
 
 header nav .logo {
@@ -118,13 +118,14 @@ header nav .nav-links .nav-links-wrap li {
   margin-left: 3rem;
 }
 
-header nav .nav-links .nav-links-wrap li a:hover {
-  color: #FFFFFF;
-}
-
 header nav .nav-links .nav-links-wrap li a {
   color: #afafaf;
   font-weight: 700;
+  transition: .4s;
+}
+
+header nav .nav-links .nav-links-wrap li a:hover {
+  color: #FFFFFF;
 }
 
 header nav .nav-links .nav-links-wrap li button a {
@@ -144,13 +145,16 @@ header nav .burger div {
 }
 
 header .sticky {
-  padding: 10px 5%;
+  height: 12vh;
 }
 
 #hero {
+  margin-top: 20vh;
   height: 80vh;
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
   padding: 0 2em;
 }
 
@@ -163,6 +167,13 @@ header .sticky {
 
 #hero h1 span {
   color: #4BFFA5;
+}
+
+#hero .typewrite {
+  color: #afafaf;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 30px;
 }
 
 main {
@@ -421,12 +432,53 @@ main {
 
 footer .footer-wrap {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
   height: 8em;
   z-index: 999;
   border: 1px solid #242424;
+}
+
+footer .footer-wrap .copyright {
+  color: #afafaf;
+  font-weight: 500;
+  transition: .4s;
+}
+
+footer .footer-wrap .copyright i {
+  margin: 0 5px;
+  color: #4BFFA5;
+  animation: fa-beat 3s ease infinite;
+}
+
+@keyframes fa-beat {
+  0% {
+    transform: scale(1);
+  }
+  15% {
+    transform: scale(1.1);
+  }
+  30% {
+    transform: scale(1);
+  }
+  45% {
+    transform: scale(1.1);
+  }
+  60% {
+    transform: scale(1);
+  }
+  75% {
+    transform: scale(1.1);
+  }
+  90% {
+    transform: scale(1);
+  }
+}
+
+footer .footer-wrap .copyright:hover {
+  color: #FFFFFF;
 }
 
 @media screen and (max-width: 950px) {
@@ -578,6 +630,7 @@ nav .toggle .line3 {
   overflow: hidden;
   position: relative;
   outline: none;
+  transition: 1.2s;
 }
 
 .btn-primary:hover, .btn-archive:hover, .btn-resume:hover {
@@ -593,11 +646,11 @@ nav .toggle .line3 {
   top: 5px;
   left: 10px;
   z-index: -1;
-  animation: scale-down 0.9s forwards;
+  animation: scale-down 1.2s forwards;
 }
 
 .animate .round, .animate-archive .round-2, .animate-resume .round-3 {
-  animation: scale-up .9s forwards;
+  animation: scale-up 1.2s forwards;
 }
 
 @keyframes scale-up {

@@ -47,7 +47,7 @@ header{
         }
     }
     nav{
-        position: relative;
+        position: fixed;
         top: 0;
         left: 0;
         display: flex;
@@ -58,7 +58,7 @@ header{
         background-color: $primary-color;
         height: 20vh;
         padding: 0 3%;
-        z-index: 999;
+        z-index: 9999;
         .logo{
             position: relative;
             transition: .6s;
@@ -86,12 +86,13 @@ header{
                 li{
                         list-style: none;
                         margin-left: 3rem;
-                        a:hover{
-                            color: $font-light-color;
-                        }
                         a{
                             color: $font-dark-color;
                             font-weight: 700;
+                            transition: .4s;
+                        }
+                        a:hover{
+                            color: $font-light-color;
                         }
                         button{
                             a{
@@ -113,16 +114,20 @@ header{
         }
     }
     .sticky{
-        padding: 10px 5%;
+        // padding: 10px 3%;
+        height: 12vh;
         // -webkit-box-shadow: 2px 2px 16px -4px rgba(238, 238, 238, 0.74);
         // -moz-box-shadow: 2px 2px 16px -4px rgba(238, 238, 238, 0.74);
         // box-shadow: 2px 2px 16px -4px rgba(238, 238, 238, 0.74);
     }
 }
 #hero{
+    margin-top: 20vh;
     height: 80vh;
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
     padding: 0 2em;
     h1{
         font-size: 44px;
@@ -132,6 +137,12 @@ header{
         span{
             color: $second-color;
         }
+    }
+    .typewrite{
+        color: $font-dark-color;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 30px;
     }
 }
 
@@ -366,12 +377,49 @@ main{
 footer{
     .footer-wrap{
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
         width: 100%;
         height: 8em;
         z-index: 999;
         border: 1px solid #242424;
+        .copyright{
+            color: $font-dark-color;
+            font-weight: 500;
+            transition: .4s;
+            i{
+                margin: 0 5px;
+                color: $second-color;
+                animation: fa-beat 3s ease infinite;
+                @keyframes fa-beat {
+                    0% {
+                        transform:scale(1);
+                    }
+                    15% {
+                        transform:scale(1.10);
+                    }
+                    30%{
+                        transform: scale(1);
+                    }
+                    45% {
+                        transform:scale(1.10);
+                    }
+                    60% {
+                        transform:scale(1);
+                    }
+                    75% {
+                        transform:scale(1.10);
+                    }
+                    90%{
+                        transform: scale(1);
+                    }
+                }
+            }
+        }
+        .copyright:hover{
+            color: $font-light-color;
+        }
     }
 }
 @import 'tablet';

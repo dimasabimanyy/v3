@@ -76,6 +76,7 @@
     overflow: hidden;
     position: relative;
     outline: none;
+    transition: 1.2s;
 }
 .btn-primary:hover, .btn-archive:hover, .btn-resume:hover {
     cursor: pointer;
@@ -89,11 +90,11 @@
     top: 5px;
     left: 10px;
     z-index: -1;
-    animation: scale-down 0.9s forwards;
+    animation: scale-down 1.2s forwards;
 }
 
 .animate .round, .animate-archive .round-2, .animate-resume .round-3 {
-    animation: scale-up .9s forwards;
+    animation: scale-up 1.2s forwards;
 }
 
 @keyframes scale-up {
