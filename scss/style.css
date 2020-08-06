@@ -182,6 +182,11 @@ main {
 
 #about {
   margin-bottom: 8em;
+  padding: 1em 0;
+}
+
+#about .about-wrap {
+  margin: 1em 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -193,19 +198,19 @@ main {
   padding: 3em 2em;
 }
 
-#about .about-img {
+#about .about-wrap .about-img {
   width: 22%;
   height: 180px;
   z-index: 999;
 }
 
-#about .about-img img {
+#about .about-wrap .about-img img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-#about .about-desc {
+#about .about-wrap .about-desc {
   width: 75%;
   display: grid;
   grid-template-columns: 1fr;
@@ -215,36 +220,36 @@ main {
   line-height: 26px;
 }
 
-#about .about-desc .about-info-flex {
+#about .about-wrap .about-desc .about-info-flex {
   display: flex;
   width: 100%;
 }
 
-#about .about-desc .about-info-flex .about-list {
+#about .about-wrap .about-desc .about-info-flex .about-list {
   width: 50%;
   font-size: 16px;
   line-height: 26px;
 }
 
-#about .about-desc .about-info-flex .about-list ul {
+#about .about-wrap .about-desc .about-info-flex .about-list ul {
   list-style: none;
 }
 
-#about .about-desc .about-info-flex .about-list ul li {
+#about .about-wrap .about-desc .about-info-flex .about-list ul li {
   margin-bottom: .2em;
 }
 
-#about .about-desc .about-info-flex .about-list ul span {
+#about .about-wrap .about-desc .about-info-flex .about-list ul span {
   color: #4BFFA5;
 }
 
 #knowledge {
   margin-bottom: 7em;
-  padding: 2em 0;
+  padding: 1em 0;
 }
 
 #knowledge .knowledge-wrap {
-  margin: 2em 0;
+  margin: 1em 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -273,9 +278,79 @@ main {
   margin-right: .7em;
 }
 
+#youtube {
+  margin-bottom: 7em;
+  padding: 1em 0;
+}
+
+#youtube .youtube-wrap {
+  margin: 1em 0;
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1.5em;
+  z-index: 999;
+  border-top: 1px solid #242424;
+  border-bottom: 1px solid #242424;
+  background: #101010;
+  padding: 3em 2em;
+  width: 100%;
+}
+
+#youtube .youtube-wrap .video-introduction iframe {
+  border: none;
+  width: 100%;
+  height: 100%;
+}
+
+#youtube .youtube-wrap .youtube-desc {
+  font-size: 16px;
+  line-height: 26px;
+  justify-content: center;
+  align-items: center;
+}
+
+#youtube .youtube-wrap .youtube-desc h4 {
+  color: #FFFFFF;
+  font-size: 18px;
+  line-height: 26px;
+  margin-bottom: 1.4em;
+}
+
+#youtube .youtube-wrap .youtube-desc ul {
+  width: 100%;
+  list-style: none;
+}
+
+#youtube .youtube-wrap .youtube-desc ul li {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  margin-bottom: .5em;
+}
+
+#youtube .youtube-wrap .youtube-desc ul li a {
+  color: #FFFFFF;
+}
+
+#youtube .youtube-wrap .youtube-desc ul li a:hover {
+  color: #FFFFFF;
+}
+
+#youtube .youtube-wrap .youtube-desc ul i {
+  color: #4BFFA5;
+  margin-right: .7em;
+}
+
+#youtube .youtube-link-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 #work {
   margin-bottom: 8em;
-  padding-bottom: 2em;
+  padding: 1em 0;
 }
 
 #work .archive-projects-wrap {
@@ -285,7 +360,7 @@ main {
 }
 
 #work .work-wrap {
-  margin: 2em 0;
+  margin: 1em 0;
   width: 100%;
   border-top: 1px solid #242424;
   border-bottom: 1px solid #242424;
@@ -614,7 +689,7 @@ nav .toggle .line3 {
 
 .section-title {
   color: #FFFFFF;
-  margin: 0 2em;
+  margin: 0 1em;
   font-size: 24px;
   line-height: 34px;
 }

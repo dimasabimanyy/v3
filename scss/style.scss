@@ -153,50 +153,54 @@ main{
 // Start about
 #about{
     margin-bottom: 8em;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    z-index: 999;
-    border-top: 1px solid #242424;
-    border-bottom: 1px solid #242424;
-    background: $body-color;
-    position: relative;
-    padding: 3em 2em;
-    .about-img{
-        width: 22%;
-        height: 180px;
+    padding: 1em 0;
+    .about-wrap{
+        margin: 1em 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
         z-index: 999;
-        img{
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
+        border-top: 1px solid #242424;
+        border-bottom: 1px solid #242424;
+        background: $body-color;
+        position: relative;
+        padding: 3em 2em;
+        .about-img{
+            width: 22%;
+            height: 180px;
+            z-index: 999;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
         }
-    }
-    .about-desc{
-        width: 75%;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-gap: 1em;
-        z-index: 999;
-        font-size: 16px;
-        line-height: 26px;
-        .about-info-flex{
-            display: flex;
-            width: 100%;
-            .about-list{
-                width: 50%;
-                font-size: 16px;
-                line-height: 26px;
-                ul{
-                    list-style: none;
-                    li{
-                        margin-bottom: .2em;
+        .about-desc{
+            width: 75%;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-gap: 1em;
+            z-index: 999;
+            font-size: 16px;
+            line-height: 26px;
+            .about-info-flex{
+                display: flex;
+                width: 100%;
+                .about-list{
+                    width: 50%;
+                    font-size: 16px;
+                    line-height: 26px;
+                    ul{
+                        list-style: none;
+                        li{
+                            margin-bottom: .2em;
+                        }
+                        span{
+                            color: $second-color
+                        }
                     }
-                    span{
-                        color: $second-color
-                    }
+                    
                 }
-                
             }
         }
     }
@@ -205,9 +209,9 @@ main{
 // Start knowledge
 #knowledge{
     margin-bottom: 7em;
-    padding: 2em 0;
+    padding: 1em 0;
     .knowledge-wrap{
-        margin: 2em 0;
+        margin: 1em 0;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
@@ -234,17 +238,80 @@ main{
     }
 }
 
+// Start youtube section
+#youtube{
+    margin-bottom: 7em;
+    padding: 1em 0;
+    .youtube-wrap{
+        margin: 1em 0;
+        position: relative;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 1.5em;
+        z-index: 999;
+        border-top: 1px solid #242424;
+        border-bottom: 1px solid #242424;
+        background: $body-color;
+        padding: 3em 2em;
+        width: 100%;
+        .video-introduction{
+            iframe{
+                border: none;
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .youtube-desc{
+            font-size: 16px;
+            line-height: 26px;
+            justify-content: center;
+            align-items: center;
+            h4{
+                color: $font-light-color;
+                font-size: 18px;
+                line-height: 26px;
+                margin-bottom: 1.4em;
+            }
+            ul{
+                width: 100%;
+                list-style:none;
+                li{
+                    font-size: 16px;
+                    line-height: 24px;
+                    font-weight:500;
+                    margin-bottom: .5em;
+                    a{
+                       color: $font-light-color; 
+                    }
+                    a:hover{
+                        color: $font-light-color;
+                    }
+                }
+                i{
+                    color: $second-color;
+                    margin-right: .7em;
+                }
+            }
+        }
+    }
+    .youtube-link-wrap{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
 //Start work projects
 #work{
     margin-bottom: 8em;
-    padding-bottom: 2em;
+    padding: 1em 0;
     .archive-projects-wrap{
         display: flex;
         justify-content: center;
         align-items: center;
     }
     .work-wrap{
-        margin: 2em 0;
+        margin: 1em 0;
         width: 100%;
         border-top: 1px solid #242424;
         border-bottom: 1px solid #242424;
