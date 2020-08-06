@@ -17,7 +17,11 @@ a {
 }
 
 header {
-  background-color: #0D0D0D;
+  height: 100vh;
+  display: flex;
+  background: url("../images/header-bg.jpg");
+  background-size: cover;
+  background-position: center;
 }
 
 header .header-left-info {
@@ -80,7 +84,7 @@ header nav {
   justify-content: space-between;
   align-items: center;
   transition: .7s ease-in-out;
-  background-color: #0D0D0D;
+  background: transparent;
   height: 20vh;
   padding: 0 3%;
   z-index: 9999;
@@ -146,11 +150,10 @@ header nav .burger div {
 
 header .sticky {
   height: 12vh;
+  background: #0D0D0D;
 }
 
-#hero {
-  margin-top: 20vh;
-  height: 80vh;
+header #hero {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -158,18 +161,19 @@ header .sticky {
   padding: 0 2em;
 }
 
-#hero h1 {
+header #hero h1 {
   font-size: 44px;
   line-height: 61px;
   color: #FFFFFF;
   z-index: 999;
+  margin-top: 1em;
 }
 
-#hero h1 span {
+header #hero h1 span {
   color: #4BFFA5;
 }
 
-#hero .typewrite {
+header #hero .typewrite {
   color: #afafaf;
   font-weight: 500;
   font-size: 18px;
@@ -186,7 +190,7 @@ main {
 }
 
 #about .about-wrap {
-  margin: 1em 0;
+  margin: 2em 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -220,36 +224,44 @@ main {
   line-height: 26px;
 }
 
-#about .about-wrap .about-desc .about-info-flex {
-  display: flex;
+#about .about-wrap .about-desc .about-info-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid: 1em;
   width: 100%;
 }
 
-#about .about-wrap .about-desc .about-info-flex .about-list {
-  width: 50%;
+#about .about-wrap .about-desc .about-info-grid .about-list {
   font-size: 16px;
   line-height: 26px;
 }
 
-#about .about-wrap .about-desc .about-info-flex .about-list ul {
+#about .about-wrap .about-desc .about-info-grid .about-list ul {
   list-style: none;
 }
 
-#about .about-wrap .about-desc .about-info-flex .about-list ul li {
+#about .about-wrap .about-desc .about-info-grid .about-list ul li {
   margin-bottom: .2em;
 }
 
-#about .about-wrap .about-desc .about-info-flex .about-list ul span {
+#about .about-wrap .about-desc .about-info-grid .about-list ul li i {
+  font-size: 1em;
   color: #4BFFA5;
+  margin-right: .5em;
+}
+
+#about .about-wrap .about-desc .about-info-grid .about-list ul span {
+  color: #FFFFFF;
+  font-weight: 500;
 }
 
 #knowledge {
-  margin-bottom: 7em;
+  margin-bottom: 8em;
   padding: 1em 0;
 }
 
 #knowledge .knowledge-wrap {
-  margin: 1em 0;
+  margin: 2em 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -284,7 +296,7 @@ main {
 }
 
 #youtube .youtube-wrap {
-  margin: 1em 0;
+  margin: 2em 0;
   position: relative;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -331,10 +343,11 @@ main {
 
 #youtube .youtube-wrap .youtube-desc ul li a {
   color: #FFFFFF;
+  transition: .4s;
 }
 
 #youtube .youtube-wrap .youtube-desc ul li a:hover {
-  color: #FFFFFF;
+  color: #afafaf;
 }
 
 #youtube .youtube-wrap .youtube-desc ul i {
@@ -360,7 +373,7 @@ main {
 }
 
 #work .work-wrap {
-  margin: 1em 0;
+  margin: 2em 0;
   width: 100%;
   border-top: 1px solid #242424;
   border-bottom: 1px solid #242424;
@@ -692,6 +705,8 @@ nav .toggle .line3 {
   margin: 0 1em;
   font-size: 24px;
   line-height: 34px;
+  z-index: 9999;
+  position: relative;
 }
 
 .btn-primary, .btn-archive, .btn-resume {

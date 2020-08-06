@@ -2,7 +2,11 @@
 
 // Navigation Menu
 header{
-    background-color: $primary-color;
+    height: 100vh;
+    display: flex;
+    background: url('../images/header-bg.jpg');
+    background-size: cover;
+    background-position: center;
     .header-left-info{
         position: fixed;
         bottom: 7%;
@@ -55,7 +59,8 @@ header{
         justify-content: space-between;
         align-items: center;
         transition: .7s ease-in-out;
-        background-color: $primary-color;
+        // background-color: $primary-color;
+        background: transparent;
         height: 20vh;
         padding: 0 3%;
         z-index: 9999;
@@ -116,35 +121,41 @@ header{
     .sticky{
         // padding: 10px 3%;
         height: 12vh;
+        background: $primary-color;
         // -webkit-box-shadow: 2px 2px 16px -4px rgba(238, 238, 238, 0.74);
         // -moz-box-shadow: 2px 2px 16px -4px rgba(238, 238, 238, 0.74);
         // box-shadow: 2px 2px 16px -4px rgba(238, 238, 238, 0.74);
     }
-}
-#hero{
-    margin-top: 20vh;
-    height: 80vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    padding: 0 2em;
-    h1{
-        font-size: 44px;
-        line-height: 61px;
-        color: $font-light-color;
-        z-index: 999;
-        span{
-            color: $second-color;
+    
+    // Start hero
+    #hero{
+        // margin-top: 20vh;
+        // height: 80vh;
+        // background: aqua;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 0 2em;
+        h1{
+            font-size: 44px;
+            line-height: 61px;
+            color: $font-light-color;
+            z-index: 999;
+            margin-top: 1em;
+            span{
+                color: $second-color;
+            }
         }
-    }
-    .typewrite{
-        color: $font-dark-color;
-        font-weight: 500;
-        font-size: 18px;
-        line-height: 30px;
-    }
+        .typewrite{
+            color: $font-dark-color;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 30px;
+        }
+    }    
 }
+// End header
 
 // Start main
 main{
@@ -155,7 +166,7 @@ main{
     margin-bottom: 8em;
     padding: 1em 0;
     .about-wrap{
-        margin: 1em 0;
+        margin: 2em 0;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
@@ -183,20 +194,27 @@ main{
             z-index: 999;
             font-size: 16px;
             line-height: 26px;
-            .about-info-flex{
-                display: flex;
+            .about-info-grid{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid: 1em;
                 width: 100%;
                 .about-list{
-                    width: 50%;
                     font-size: 16px;
                     line-height: 26px;
                     ul{
                         list-style: none;
                         li{
                             margin-bottom: .2em;
+                            i{
+                                font-size: 1em;
+                                color: $second-color;
+                                margin-right: .5em;
+                            }
                         }
                         span{
-                            color: $second-color
+                            color: $font-light-color;
+                            font-weight: 500;
                         }
                     }
                     
@@ -208,10 +226,10 @@ main{
 
 // Start knowledge
 #knowledge{
-    margin-bottom: 7em;
+    margin-bottom: 8em;
     padding: 1em 0;
     .knowledge-wrap{
-        margin: 1em 0;
+        margin: 2em 0;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
@@ -243,7 +261,7 @@ main{
     margin-bottom: 7em;
     padding: 1em 0;
     .youtube-wrap{
-        margin: 1em 0;
+        margin: 2em 0;
         position: relative;
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -282,9 +300,10 @@ main{
                     margin-bottom: .5em;
                     a{
                        color: $font-light-color; 
+                       transition: .4s;
                     }
                     a:hover{
-                        color: $font-light-color;
+                        color: $font-dark-color;
                     }
                 }
                 i{
@@ -311,7 +330,7 @@ main{
         align-items: center;
     }
     .work-wrap{
-        margin: 1em 0;
+        margin: 2em 0;
         width: 100%;
         border-top: 1px solid #242424;
         border-bottom: 1px solid #242424;
