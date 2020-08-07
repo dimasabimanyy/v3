@@ -35,24 +35,45 @@
     margin: 0 auto;
     position: relative;
 }
-@media only screen and (max-width: 768px){
-    .container-strip{
-        width: 85%;
-        margin: 0 auto;
+@media only screen and (max-width: 950px){
+    .container, .container-strip{
+        width: 90%;
     }
-    .container-strip-fluid{
+}
+@media only screen and (max-width: 768px){
+    .container{
+        width: 90%;
+    }
+    .container-strip{
         width: 95%;
-        margin: 0 auto;
     }
 }
 @media only screen and (max-width: 600px){
-    .container-strip{
-        width: 85%;
-        margin: 0 auto;
+    .container{
+        width: 90%;
     }
-    .container-strip-fluid{
+    .container-strip{
         width: 95%;
-        margin: 0 auto;
+    }
+}
+
+// Navigation Responsive
+.burger{
+    display: none;
+    z-index: 99999;
+    div{
+        width: 30px;
+        height: 2px;
+        background-color: $font-light-color;
+        margin: 7px;
+        transition: all 0.3s;
+        z-index: 99999;
+    }
+}
+@media only screen and (max-width: 950px){
+    .burger{
+        display: block;
+        cursor: pointer;
     }
 }
 
@@ -62,7 +83,7 @@
     margin: 0 1em;
     font-size: 24px;
     line-height: 34px;
-    z-index: 999;
+    z-index: 9;
     position: relative;
 }
 
@@ -79,6 +100,11 @@
     position: relative;
     outline: none;
     transition: 1.2s;
+}
+@media only screen and (max-width: 950px){
+    .btn-resume{
+        padding: 1em 2em;
+    }
 }
 .btn-primary:hover, .btn-archive:hover, .btn-resume:hover {
     cursor: pointer;
