@@ -85,9 +85,6 @@ nav{
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (max-width: 768px){
-	body{
-		// background: aqua;
-	}
 	.header-right-info{
 		p{
 			opacity: 0;
@@ -104,22 +101,56 @@ nav{
 	}
 
 	#about{
-		.about-img{
-			max-height: 120px;
-		}
-	}
+        .about-wrap{
+            flex-direction: column;
+            border: 1px solid #242424;
+            .about-img{
+                display: block;
+                width: 120px;
+                margin: 0 auto;
+				margin-bottom: 1.5em;
+				max-height: 120px;
+            }
+            .about-desc{
+                width: 100%;
+            }
+        }   
+    }
+	
+    #knowledge{
+		.knowledge-wrap{
+			border: 1px solid #242424;
+            ul{
+				width: 100%;
+            }
+        }
+    }
 
 	#youtube{
 		.youtube-wrap{
 			grid-template-columns: 1fr;
+			border: 1px solid #242424;
 			.video-introduction{
 				height: 300px;
 			}
 		}
 	}
 
+    #experience{
+		.experience-wrap{
+			grid-template-columns: 1fr;
+        }
+    }
+	
+    #contact{
+        .contact-wrap{
+			grid-template-columns: 1fr;
+        }
+	}
+
 	#work{
 		.work-wrap{
+			border: 1px solid #242424;
 			.project-wrap{
 				position: relative;
 				justify-content: center;
