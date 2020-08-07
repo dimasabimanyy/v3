@@ -4,7 +4,7 @@
 header{
     height: 100vh;
     display: flex;
-    background: url('../images/header-bg.jpg');
+    // background: url('../images/header-bg.jpg');
     background-size: cover;
     background-position: center;
     .header-left-info{
@@ -256,6 +256,45 @@ main{
     }
 }
 
+// Start experience
+#experience{
+    margin-bottom: 10em;
+    .experience-wrap{
+        margin: 2em 0;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        background-color: $body-color;
+        grid-gap: 5em;
+        .experience-box{
+            z-index: 999;
+            background-color: $body-color;
+            border: 1px solid #242424;
+            padding: 3em 2em;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            h6{
+                font-size: 14px;
+                line-height: 20px;
+                color: $second-color;
+                margin-bottom: .3em;
+            }
+            h5{
+                color: $font-light-color;
+                font-size: 17px;
+                line-height: 26px;
+                margin-bottom: .4em;
+            }
+            p{
+                font-size: 16px;
+                line-height: 26px;
+            }
+        }
+    }
+}
+
+
 // Start youtube section
 #youtube{
     margin-bottom: 7em;
@@ -297,7 +336,7 @@ main{
                     font-size: 16px;
                     line-height: 24px;
                     font-weight:500;
-                    margin-bottom: .5em;
+                    margin-bottom:1em;
                     a{
                        color: $font-light-color; 
                        transition: .4s;
@@ -339,14 +378,14 @@ main{
             display: flex;
             position: relative;
             flex-wrap: wrap;
+            justify-content: space-between;
             border-top: 1px solid #242424;
             border-bottom: 1px solid #242424;
             background-color: $body-color;
             z-index: 999;
-            padding: 3em 0;
-            padding-left: 2em;   
+            padding: 3em 2em;   
             .image-project{
-                width: 55%;
+                width: 54%;
                 min-height: 17em;
                 z-index: 999;
                 img{
@@ -359,14 +398,14 @@ main{
                 z-index: 999;
                 background-color:$body-color;
                 min-height: 100%;
-                width: 45%;
+                width: 44%;
                 text-align: right;
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
                 text-align: center;
-                padding-right: 2em;
-                padding-left: 2em;
+                // padding-right: 2em;
+                // padding-left: 2em;
                 h5{
                     font-size: 20px;
                     margin-bottom: 1em;
@@ -385,14 +424,15 @@ main{
                     text-align: center;
                     justify-content: center;
                     font-family: $font-stack;
-                    font-size: 16px;
-                    margin-bottom: 1.5em;
+                    margin-bottom: 1em;
                     color: $second-color;
                     font-weight: 500;
                     ul{
                         display: inline-flex;
                         list-style: none;
                         li{
+                            font-size: 14px;
+                            line-height: 20px;
                             margin-left: 1em;
                         }
                     }
@@ -402,9 +442,10 @@ main{
                     justify-content: center;
                     a{
                         color: $font-dark-color;
-                        font-size: 1.4em;
+                        font-size: 1.5em;
                         margin: 0 .3em;
                         color: $font-light-color;
+                        transition: .4s;
                     }
                     a:hover{
                         color: $second-color;
@@ -433,7 +474,7 @@ main{
             z-index: 999;
             background-color: $body-color;
             border: 1px solid #242424;
-            padding: 5em 1em;
+            padding: 3em 1em;
             display: flex;
             justify-content: center;
             align-items: center;
