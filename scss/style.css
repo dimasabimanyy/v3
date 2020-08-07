@@ -192,7 +192,7 @@ main {
 
 #about .about-wrap .about-img {
   width: 22%;
-  max-height: 150px;
+  height: 150px;
   z-index: 9;
 }
 
@@ -424,6 +424,7 @@ main {
 #work .work-wrap .project-wrap .mobile-project-wrap {
   width: 100%;
   display: flex;
+  justify-content: space-between;
   position: relative;
   flex-wrap: wrap;
   background-color: #101010;
@@ -452,7 +453,6 @@ main {
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  padding-left: 2em;
 }
 
 #work .work-wrap .project-wrap .mobile-project-wrap .info-project h5 {
@@ -506,6 +506,14 @@ main {
 
 #work .work-wrap .project-wrap .mobile-project-wrap .info-project .project-source a:hover {
   color: #4BFFA5;
+}
+
+#work .work-wrap .right-image {
+  flex-direction: row-reverse;
+}
+
+#work .work-wrap .right-image .info-project {
+  background: maroon;
 }
 
 #contact {
@@ -721,8 +729,36 @@ nav .toggle .line3 {
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (max-width: 600px) {
-  body {
-    background: palegreen;
+  #about .about-wrap {
+    flex-direction: column;
+    border: 1px solid #242424;
+  }
+  #about .about-wrap .about-img {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 1.5em;
+    height: 250px;
+  }
+  #about .about-wrap .about-desc {
+    width: 100%;
+  }
+  #knowledge .knowledge-wrap {
+    border: 1px solid #242424;
+  }
+  #knowledge .knowledge-wrap ul {
+    width: 100%;
+  }
+  #youtube .youtube-wrap {
+    border: 1px solid #242424;
+  }
+  #work .work-wrap {
+    border: 1px solid #242424;
+  }
+  #experience .experience-wrap {
+    grid-template-columns: 1fr;
+  }
+  #contact .contact-wrap {
+    grid-template-columns: 1fr;
   }
 }
 
@@ -779,7 +815,23 @@ nav .toggle .line3 {
     width: 90%;
   }
   .container-strip {
-    width: 95%;
+    width: 90%;
+    border: none;
+  }
+  .container-strip:before {
+    content: '';
+    width: 1px;
+    height: 100%;
+    background: #242424;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    z-index: 1;
+  }
+  .container-strip:after {
+    content: '';
+    width: 0;
+    height: 100%;
   }
 }
 
@@ -788,7 +840,7 @@ nav .toggle .line3 {
     width: 90%;
   }
   .container-strip {
-    width: 95%;
+    width: 90%;
   }
 }
 
@@ -827,13 +879,18 @@ nav .toggle .line3 {
   font-weight: 600;
   font-size: 16px;
   border: 2px solid #4BFFA5;
-  background: transparent;
+  background: #101010;
   padding: .5em 1em;
   cursor: pointer;
   overflow: hidden;
   position: relative;
   outline: none;
   transition: 1.2s;
+  z-index: 99;
+}
+
+.btn-resume {
+  background: transparent;
 }
 
 @media only screen and (max-width: 950px) {

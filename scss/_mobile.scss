@@ -1,6 +1,55 @@
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (max-width: 600px){
     body{
-        background: palegreen;
+        // background: palegreen;
+    }
+
+    #about{
+        .about-wrap{
+            flex-direction: column;
+            border: 1px solid #242424;
+            .about-img{
+                display: block;
+                margin: 0 auto;
+                margin-bottom: 1.5em;
+                height: 250px;
+            }
+            .about-desc{
+                width: 100%;
+            }
+        }   
+    }
+
+    #knowledge{
+        .knowledge-wrap{
+            border: 1px solid #242424;
+            ul{
+                width: 100%;
+            }
+        }
+    }
+
+    #youtube{
+        .youtube-wrap{
+            border: 1px solid #242424;
+        }
+    }
+
+    #work{
+        .work-wrap{
+            border: 1px solid #242424;
+        }
+    }
+
+    #experience{
+        .experience-wrap{
+            grid-template-columns: 1fr;
+        }
+    }
+
+    #contact{
+        .contact-wrap{
+            grid-template-columns: 1fr;
+        }
     }
 }

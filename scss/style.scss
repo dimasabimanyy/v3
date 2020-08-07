@@ -165,7 +165,7 @@ main{
         padding: 3em 2em;
         .about-img{
             width: 22%;
-            max-height: 150px;
+            height: 150px;
             z-index: 9;
             img{
                 width: 100%;
@@ -373,6 +373,7 @@ main{
             .mobile-project-wrap{
                 width: 100%;
                 display: flex;
+                justify-content: space-between;
                 position: relative;
                 flex-wrap: wrap;
                 background-color: $body-color;
@@ -397,7 +398,6 @@ main{
                     flex-direction: column;
                     justify-content: center;
                     text-align: center;
-                    padding-left: 2em;
                     h5{
                         font-size: 20px;
                         margin-bottom: 1em;
@@ -446,10 +446,12 @@ main{
                 }
             }
         }
-        // .right-image{
-        //     flex-direction: row-reverse;
-        //     padding-right: 2em;
-        // }    
+        .right-image{
+            flex-direction: row-reverse;
+            .info-project{
+                background: maroon;
+            }
+        }    
     }	
 }
 
