@@ -4,7 +4,6 @@
 header{
     height: 100vh;
     display: flex;
-    // background: url('../images/header-bg.jpg');
     background-size: cover;
     background-position: center;
     .header-left-info{
@@ -38,11 +37,11 @@ header{
             i{
                 font-size: 1em;
                 color: $font-dark-color;
-                transition: .3s ease-in;
+                transition: .2s ease-in;
             }
             i:hover{
-                color: $second-color;
-                transform: translateY(-.2em);
+                color: $font-light-color;
+                transform: scale(1.1);
             }
         }
         .standing-line-right{
@@ -449,7 +448,6 @@ main{
         .right-image{
             flex-direction: row-reverse;
             .info-project{
-                background: maroon;
             }
         }    
     }	

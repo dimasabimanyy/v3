@@ -13,13 +13,15 @@
 	<link rel="apple-touch-icon" sizes="180x180" href="./images/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="./images/favicon-16x16.png">
-	<link rel="manifest" href="/site.webmanifest">
+	<!-- <link rel="manifest" href="/site.webmanifest"> -->
 	<!-- Font awesome -->
 	<script src="https://kit.fontawesome.com/2b296c63cf.js" crossorigin="anonymous"></script>
 	<!-- Jquery -->
 	<script src="js/jquery.3.5.1.js"></script>
 	<!-- Parallax Js  -->
 	<script src="js/parallax.js/parallax.min.js"></script>
+	<!-- Animate on scroll (AOS) -->
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
 
@@ -27,13 +29,13 @@
 <header class="parallax-window" data-parallax="scroll" data-image-src="images/header-bg.jpg">
 
 	<!-- Header left info -->
-	<div class="header-left-info">
+	<div class="header-left-info" data-aos="fade-in" data-aos-delay="2000" data-aos-duration="1200" data-aos-offset="-400">
 		<p>E : dmsabmny@gmail.com</p>
 		<p>T : +62 882 6016 7033</p>
 	</div>
 
 	<!-- Header right info -->
-	<ul class="header-right-info">
+	<ul class="header-right-info" data-aos="fade-in" data-aos-delay="2000" data-aos-duration="1200">
 		<p>Follow Me</p>
 		<div class="standing-line-right"></div>
 		<li>
@@ -49,28 +51,29 @@
 			<a href="" target="_blank"><i class="fa fa-instagram"></i></a>
 		</li>
 	</ul>
+
 	<!-- Start Navigation -->
 	<nav>
-		<div class="logo" >
+		<div class="logo"  data-aos-delay="1400" data-aos="fade-in" data-aos-duration="800">
 				<a href="">
 						Dimas <span>Abimanyu</span>
 				</a>
 		</div>
 		<ul class="nav-links">
 			<div class="nav-links-wrap">
-				<li>
+				<li data-aos="fade-down"data-aos-delay="1200" data-aos-duration="300">
 					<a href="#about">About</a>
 				</li>
-				<li>
+				<li data-aos="fade-down"data-aos-delay="1200" data-aos-duration="600">
 					<a href="#youtube">Youtube</a>
 				</li>
-				<li>
+				<li data-aos="fade-down"data-aos-delay="1200" data-aos-duration="900">
 					<a href="#work">Work</a>
 				</li>
-				<li>
+				<li data-aos="fade-down"data-aos-delay="1200" data-aos-duration="1200">
 					<a href="#contact">Contact</a>
 				</li>
-				<li>
+				<li data-aos="fade-down"data-aos-delay="1200" data-aos-duration="1500">
 					<a href="">
 						<button class="btn-resume">Resume<span class="round-3"/></button>
 					</a>
@@ -87,9 +90,9 @@
 
 	<!-- Start Hero -->
 	<section id="hero" class="container">
-		<h1 class="hero-title">
+		<h1 class="hero-title" data-aos="fade-in" data-aos-delay="300" data-aos-duration="1000">
 			Hello, I’m <span>Dimas Abimanyu</span>, UX/UI Designer and Front-end Developer Based in Medan, Indonesia.</h1>
-			<h2>
+			<h2 data-aos="fade-in" data-aos-delay="500" data-aos-duration="1900">
 				<a href="" class="typewrite" data-period="2000" data-type='[  
 				"Your business is unique and your website should reflect that. ", 
 				"i seek to provide services with a comprehensive, pre-determined strategy to assure your return on investment. ",
@@ -109,8 +112,8 @@
 
 	<!-- Start about -->
 	<section id="about">
-		<h1 class="section-title">About Me</h1>
-		<div class="about-wrap">
+		<h1 class="section-title" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1200">About Me</h1>
+		<div class="about-wrap" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1200">
 			<div class="about-img">
 				<img src="images/me.jpg" alt="Foto Dimas Abimanyu">
 			</div>
@@ -161,8 +164,8 @@
 
 	<!-- Start knowledge -->
 	<section id="knowledge">
-		<h1 class="section-title">Knowledge</h1>
-		<div class="knowledge-wrap">
+		<h1 class="section-title" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1200">Knowledge</h1>
+		<div class="knowledge-wrap" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1200">
 			<ul>
 				<li>
 					<i class="fa fa-check"></i>
@@ -205,24 +208,24 @@
 
 	<!-- Start experience -->
 	<section id="experience">
-		<h1 class="section-title">My Experience</h1>
+		<h1 class="section-title" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1200">My Experience</h1>
 		<div class="experience-wrap">
-			<div class="experience-box">
+			<div class="experience-box" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1200">
 				<h6 class="experience-year">2019 - Present</h6>
 				<h5>Full Stack Web Developer - Freelance</h5>
 				<p>Collaborate with creative and development teams on the execution of ideas.</p>
 			</div>
-			<div class="experience-box">
+			<div class="experience-box" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1200">
 				<h6 class="experience-year">2016 - 2019</h6>
 				<h5>Art Director - Facebook Inc.</h5>
 				<p>Monitored technical aspects of the front-end delivery for projects.</p>
 			</div>
-			<div class="experience-box">
+			<div class="experience-box" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1200">
 				<h6 class="experience-year">2014 - 2016</h6>
 				<h5>Front-End Developer - Google Inc.</h5>
 				<p>Optimize your website and apps performance using latest technology.</p>
 			</div>
-			<div class="experience-box">
+			<div class="experience-box" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1200">
 				<h6 class="experience-year">2013 - 2014</h6>
 				<h5>Senior Developer - ABC Inc.</h5>
 				<p>Coursework - Git, WordPress, Javascript, iOS, Android.</p>
@@ -233,8 +236,8 @@
 
 	<!-- Start Youtube Section -->
 	<section id="youtube">
-		<h1 class="section-title">Youtube Channel</h1>
-		<div class="youtube-wrap">
+		<h1 class="section-title" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1200">Youtube Channel</h1>
+		<div class="youtube-wrap" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1200">
 			<div class="video-introduction">
 				<iframe src="https://youtube.com/embed/qj9HeT-IaEg?controls=0">
 				</iframe>
@@ -269,12 +272,12 @@
 
 	<!-- Start my projects -->
 	<section id="work">
-		<h1 class="section-title">
+		<h1 class="section-title" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1200">
 			My Projects
 		</h1>
 		<div class="work-wrap">
 			<!-- Project 1 -->
-			<div class="project-wrap left-image">
+			<div class="project-wrap left-image" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1200">
 				<div class="mobile-project-wrap">
 					<div class="image-project">
 						<img src="images/Projects/project-1.png" alt="Project 1">
@@ -301,7 +304,7 @@
 			</div>
 	
 			<!-- Project 2 -->
-			<div class="project-wrap">
+			<div class="project-wrap" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1200">
 				<div class="mobile-project-wrap right-image">
 					<div class="image-project">
 						<img src="images/Projects/project-1.png" alt="Project 1">
@@ -328,7 +331,7 @@
 			</div>
 
 			<!-- Project 3 -->
-			<div class="project-wrap left-image">
+			<div class="project-wrap left-image" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1200">
 				<div class="mobile-project-wrap">
 					<div class="image-project">
 						<img src="images/Projects/project-1.png" alt="Project 1">
@@ -354,7 +357,7 @@
 				</div>
 			</div>
 		</div>
-		<a href="" class="archive-projects-wrap">
+		<a href="" class="archive-projects-wrap" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1200">
 			<button class="btn-archive">See Projects Archive<span class="round-2" /></button>
 		</a>
 	</section>
@@ -362,24 +365,24 @@
 
 	<!-- Start contant -->
 	<section id="contact">
-		<h1 class="section-title">Contact</h1>
-		<div class="contact-wrap">
-			<div class="contact-box">
+		<h1 class="section-title" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1200">Contact</h1>
+		<div class="contact-wrap" >
+			<div class="contact-box" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1200">
 				<i class="fa fa-phone"></i>
 				<h5>Phone</h5>
 				<p>+ (231) 456 67 89</p>
 			</div>
-			<div class="contact-box">
+			<div class="contact-box" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1200">
 				<i class="fa fa-envelope-o"></i>
 				<h5>Email</h5>
 				<p>dmsabmny@gmail.com</p>
 			</div>
-			<div class="contact-box">
+			<div class="contact-box" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1200">
 				<i class="fa fa-location-arrow"></i>
 				<h5>Address</h5>
 				<p>St. Sutoyo Tebing Tinggi, Sumatera Utara</p>
 			</div>
-			<div class="contact-box">
+			<div class="contact-box" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1200">
 				<i class="fa fa-user"></i>
 				<h5>Freelance Available</h5>
 				<p>+ (231) 456 67 89</p>
@@ -394,8 +397,8 @@
 
 <!-- Start footer -->
 <footer class="container">
-	<div class="footer-wrap">
-		<a href="https://github.com/dimasabimanyy/v2" target="_blank" class="copyright">Built with <i class="fa fa-heart"> </i> by Dimas Abimanyu </a>
+	<div class="footer-wrap" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1200">
+		<a href="https://github.com/dimasabimanyy/v2" target="_blank" class="copyright" >Built with <i class="fa fa-heart"> </i> by Dimas Abimanyu </a>
 	</div>
 </footer>
 <!-- End footer -->
@@ -404,8 +407,8 @@
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script type="module">
     AOS.init({
-        once: true
-    });
+		once: true
+	});
 
 </script>
 </body>

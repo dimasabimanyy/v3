@@ -61,12 +61,12 @@ header .header-right-info li {
 header .header-right-info li i {
   font-size: 1em;
   color: #afafaf;
-  transition: .3s ease-in;
+  transition: .2s ease-in;
 }
 
 header .header-right-info li i:hover {
-  color: #4BFFA5;
-  transform: translateY(-0.2em);
+  color: #FFFFFF;
+  transform: scale(1.1);
 }
 
 header .header-right-info .standing-line-right {
@@ -510,10 +510,6 @@ main {
 
 #work .work-wrap .right-image {
   flex-direction: row-reverse;
-}
-
-#work .work-wrap .right-image .info-project {
-  background: maroon;
 }
 
 #contact {
