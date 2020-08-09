@@ -6,6 +6,7 @@ $second-color: #4BFFA5;
 $font-dark-color: #afafaf; 
 $font-light-color: #FFFFFF;
 $body-color:#101010;
+$border-color: #242424;
 
 *{
     margin: 0;
@@ -21,3 +22,20 @@ body{
 a{
     text-decoration: none;
 }
+
+// Custom Scrollbar
+::-webkit-scrollbar{
+  width: 12px;
+}
+::-webkit-scrollbar-track{
+  border: 7px solid $body-color;
+  box-shadow: inset 0 0 5px 4px $border-color;
+}
+::-webkit-scrollbar-thumb{
+  background: linear-gradient(#009c7d, $second-color);
+  border-radius: 3px;
+}
+// ::-webkit-scrollbar-thumb:hover{
+//   background: linear-gradient( #fdcb6e, #d63031);
+// }
+
