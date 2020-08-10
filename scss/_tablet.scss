@@ -5,6 +5,7 @@
 	}
 	// Header
 	nav{
+		z-index: 99;
 		.nav-links{
 			position: absolute;
 			width: 50%;
@@ -26,7 +27,8 @@
 				display: flex;
 				flex-direction: column;
 				align-items: center;
-				justify-content: space-around;	
+				justify-content: space-around;
+				z-index: 999;	
 				li{
 					a{
 						display: flex;

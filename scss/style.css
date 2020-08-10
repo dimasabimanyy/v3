@@ -14,6 +14,7 @@ body {
 
 a {
   text-decoration: none;
+  font-family: "Roboto", sans-serif;
 }
 
 ::-webkit-scrollbar {
@@ -102,7 +103,7 @@ header nav {
   background: transparent;
   height: 20vh;
   padding: 0 3%;
-  z-index: 99;
+  z-index: 999;
 }
 
 header nav .logo {
@@ -622,6 +623,9 @@ footer .footer-wrap .copyright:hover {
 }
 
 @media screen and (max-width: 950px) {
+  nav {
+    z-index: 99;
+  }
   nav .nav-links {
     position: absolute;
     width: 50%;
@@ -645,6 +649,7 @@ footer .footer-wrap .copyright:hover {
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
+    z-index: 999;
   }
   nav .nav-links .nav-links-wrap li a {
     display: flex;
@@ -894,7 +899,7 @@ nav .toggle .line3 {
   position: relative;
   outline: none;
   transition: 1.2s;
-  z-index: 99;
+  z-index: 2;
 }
 
 .btn-resume {
