@@ -166,10 +166,23 @@ main{
             width: 22%;
             height: 150px;
             z-index: 9;
+            position: relative;
             img{
                 width: 100%;
                 height: 100%;
                 object-fit: cover;
+            }
+            .gray-shadow{
+                width: 100%;
+                height: 100%;
+                background: rgb(51, 51, 51);
+                position: absolute;
+                top: 0;
+                opacity: .5;
+                transition: .2s;
+            }
+            .gray-shadow:hover{
+                opacity: 0;
             }
         }
         .about-desc{
@@ -362,7 +375,6 @@ main{
         position: relative;
         .project-wrap{
             width: 100%;
-            padding: 2em;
             justify-content: space-between;
             border-top: 1px solid $border-color;
             border-bottom: 1px solid $border-color;
@@ -371,77 +383,55 @@ main{
             position: relative;
             .mobile-project-wrap{
                 width: 100%;
-                display: flex;
-                justify-content: space-between;
                 position: relative;
-                flex-wrap: wrap;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
                 background-color: $body-color;
                 z-index: 9;
                 .image-project{
-                    width: 54%;
-                    height: 17em;
+                    padding: 1em;
                     z-index: 9;
-                    img{
-                        height: 100%;
+                    .image-box{
+                        position: relative;
                         width: 100%;
-                        object-fit: cover;
-                    }
-                }
-                .info-project{
-                    z-index: 9;
-                    background-color:$body-color;
-                    min-height: 100%;
-                    width: 44%;
-                    text-align: right;
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    text-align: center;
-                    h5{
-                        font-size: 20px;
                         margin-bottom: 1em;
-                        color: $font-light-color;
-                    }
-                    .desc-project{
-                        font-family: $font-stack;
-                        margin-bottom: 1em;
-                        font-size: 16px;
-                        line-height: 26px;
-                    }
-                    .tech-use{
-                        width: 100%;
-                        display: flex;
-                        flex-wrap: wrap;
-                        text-align: center;
-                        justify-content: center;
-                        font-family: $font-stack;
-                        margin-bottom: 1em;
-                        color: $second-color;
-                        font-weight: 500;
-                        ul{
-                            display: inline-flex;
-                            list-style: none;
-                            li{
-                                font-size: 14px;
-                                line-height: 20px;
-                                margin-left: 1em;
+                        img{
+                            height: 100%;
+                            width: 100%;
+                            object-fit: cover;
+                        }
+                        .shadow-green{
+                            width: 100%;
+                            height: 100%;
+                            background: $second-color;
+                            opacity: 0;
+                            position: absolute;
+                            top: 0;
+                            z-index: 99;
+                            transition: .4s;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            i{
+                                font-size: 40px;
+                                color: #202020;
                             }
                         }
                     }
-                    .project-source{
-                        display: flex;
-                        justify-content: center;
-                        a{
-                            color: $font-dark-color;
-                            font-size: 1.5em;
-                            margin: 0 .3em;
-                            color: $font-light-color;
-                            transition: .4s;
-                        }
-                        a:hover{
-                            color: $second-color;
-                        }
+                    .image-box:hover .shadow-green{
+                        opacity: .5;
                     }
+                    .project-title{
+                        margin-top: 1em;
+                        color: $font-light-color;
+                        text-align: center;
+                        font-size: 19px;
+                        line-height: 28px;
+                        z-index: 9;
+                    }
+                }
+                .border-right{
+                    border-right: 1px solid $border-color;
                 }
             }
         }
