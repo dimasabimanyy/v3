@@ -1,42 +1,38 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap");
 
-$font-stack: 'Roboto', sans-serif;
-$primary-color: #0D0D0D;
-$second-color: #4BFFA5;
-$font-dark-color: #afafaf; 
-$font-light-color: #FFFFFF;
-$body-color:#101010;
+$font-stack: "Roboto", sans-serif;
+$primary-color: #0d0d0d;
+$second-color: #4bffa5;
+$font-dark-color: #afafaf;
+$font-light-color: #ffffff;
+$body-color: #101010;
 $border-color: #242424;
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-body{
-    font-family: $font-stack;
-    background-color: $body-color;
-    color: $font-dark-color;
-    overflow-x: hidden;
+body {
+  font-family: $font-stack;
+  background-color: $body-color;
+  color: $font-dark-color;
+  overflow-x: hidden;
 }
-a{
-    text-decoration: none;
-    font-family: $font-stack;
+a {
+  text-decoration: none;
+  font-family: $font-stack;
 }
 
 // Custom Scrollbar
-::-webkit-scrollbar{
+::-webkit-scrollbar {
   width: 12px;
 }
-::-webkit-scrollbar-track{
+::-webkit-scrollbar-track {
   border: 7px solid $body-color;
   box-shadow: inset 0 0 5px 4px $border-color;
 }
-::-webkit-scrollbar-thumb{
+::-webkit-scrollbar-thumb {
   background: linear-gradient(#009c7d, $second-color);
   border-radius: 3px;
 }
-// ::-webkit-scrollbar-thumb:hover{
-//   background: linear-gradient( #fdcb6e, #d63031);
-// }
-

@@ -1,3 +1,12 @@
-@media only screen and (max-width: 600px){
-    
+@media only screen and (max-width: 600px) {
+  nav {
+    background: skyblue !important;
+  }
+
+  #hero {
+    h1 {
+      font-size: 30px !important;
+      line-height: 41px !important;
+    }
+  }
 }
