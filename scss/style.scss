@@ -1,9 +1,5 @@
 @import "config";
 
-@import "utilities";
-@import "tablet";
-@import "mobile";
-
 header {
   height: 100vh;
   display: flex;
@@ -443,3 +439,7 @@ footer {
     }
   }
 }
+
+@import "tablet";
+@import "mobile";
+@import "utilities";

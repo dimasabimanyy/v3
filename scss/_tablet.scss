@@ -1,10 +1,6 @@
-// Navigation Responsive in here
 @media screen and (max-width: 950px) {
-  // Header
   nav {
     z-index: 99;
-    height: 10vh !important;
-    background: aqua !important;
     .nav-links {
       position: absolute;
       width: 50%;
@@ -48,9 +44,9 @@
   }
 
   #hero {
-    .hero-title {
-      font-size: 35px;
-      line-height: 50px;
+    h1 {
+      font-size: 27px !important;
+      line-height: 37px !important;
     }
   }
   // End header
@@ -85,9 +81,6 @@ nav {
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (max-width: 768px) {
-  nav {
-    background: maroon !important;
-  }
   .header-right-info {
     p {
       opacity: 0;
@@ -109,10 +102,10 @@ nav {
       border: 1px solid #242424;
       .about-img {
         display: block;
-        width: 120px;
         margin: 0 auto;
         margin-bottom: 1.5em;
-        max-height: 120px;
+        height: 300px;
+        width: 50%;
       }
       .about-desc {
         width: 100%;
@@ -139,48 +132,20 @@ nav {
     }
   }
 
-  #experience {
-    .experience-wrap {
+  #works {
+    .works-wrap {
       grid-template-columns: 1fr;
+      .project-box {
+        img {
+          height: 350px;
+        }
+      }
     }
   }
 
   #contact {
     .contact-wrap {
       grid-template-columns: 1fr;
-    }
-  }
-
-  #work {
-    .work-wrap {
-      border: 1px solid #242424;
-      .project-wrap {
-        position: relative;
-        justify-content: center;
-        align-items: center;
-        // background: maroon;
-        .mobile-project-wrap {
-          margin: 2em 0;
-          width: 100%;
-          position: relative;
-          height: 20em;
-          // background: aquamarine;
-          .image-project {
-            position: absolute;
-            height: 100%;
-            // top: 2em;
-            width: 100%;
-            opacity: 0.3;
-          }
-          .info-project {
-            width: 100%;
-            position: relative;
-            background: transparent;
-            padding: 2em;
-            // background: maroon;
-          }
-        }
-      }
     }
   }
 }

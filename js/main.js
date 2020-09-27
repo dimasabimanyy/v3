@@ -100,41 +100,6 @@ button.addEventListener("mouseleave", function () {
   item.style.left = buttonX + "px";
 });
 
-// Button hover effect -> See Projects Archive button
-let button_archive = document.querySelector(".btn-archive");
-let item_archive = document.querySelector(".round-2");
-
-button_archive.addEventListener("mouseenter", function (event) {
-  this.classList += " animate-archive";
-
-  let button_archiveX = event.offsetX;
-  let button_archiveY = event.offsetY;
-
-  if (button_archiveY < 24) {
-    item_archive.style.top = 0 + "px";
-  } else if (button_archiveY > 30) {
-    item_archive.style.top = 48 + "px";
-  }
-
-  item_archive.style.left = button_archiveX + "px";
-  item_archive.style.width = "1px";
-  item_archive.style.height = "1px";
-});
-
-button_archive.addEventListener("mouseleave", function () {
-  this.classList.remove("animate-archive");
-
-  let button_archiveX = event.offsetX;
-  let button_archiveY = event.offsetY;
-
-  if (button_archiveY < 24) {
-    item_archive.style.top = 0 + "px";
-  } else if (button_archiveY > 30) {
-    item_archive.style.top = 48 + "px";
-  }
-  item_archive.style.left = button_archiveX + "px";
-});
-
 // Button hover effect -> Resume button
 let button_resume = document.querySelector(".btn-resume");
 let item_resume = document.querySelector(".round-3");
