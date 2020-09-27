@@ -3,7 +3,7 @@
 @import "utilities";
 @import "tablet";
 @import "mobile";
-// Navigation Menu
+
 header {
   height: 100vh;
   display: flex;
@@ -63,7 +63,6 @@ header {
     justify-content: space-between;
     align-items: center;
     transition: 0.7s ease-in-out;
-    // background-color: $primary-color;
     background: transparent;
     height: 20vh;
     padding: 0 3%;
@@ -113,12 +112,8 @@ header {
   .sticky {
     height: 12vh;
     background: $primary-color;
-    // -webkit-box-shadow: 2px 2px 16px -4px rgba(238, 238, 238, 0.74);
-    // -moz-box-shadow: 2px 2px 16px -4px rgba(238, 238, 238, 0.74);
-    // box-shadow: 2px 2px 16px -4px rgba(238, 238, 238, 0.74);
   }
 
-  // Start hero
   #hero {
     display: flex;
     flex-direction: column;
@@ -126,8 +121,8 @@ header {
     align-items: flex-start;
     padding: 0 2em;
     h1 {
-      font-size: 44px;
-      line-height: 61px;
+      font-size: 35px;
+      line-height: 45px;
       color: $font-light-color;
       z-index: 9;
       margin-top: 1em;
@@ -138,18 +133,16 @@ header {
     .typewrite {
       color: $font-dark-color;
       font-weight: 500;
-      font-size: 18px;
+      font-size: 17px;
       line-height: 30px;
     }
   }
 }
-// End header
 
-// Start main
 main {
   padding: 3em 0;
 }
-// Start about
+
 #about {
   margin-bottom: 8em;
   padding: 1em 0;
@@ -166,25 +159,13 @@ main {
     padding: 3em 2em;
     .about-img {
       width: 22%;
-      height: 150px;
+      height: 200px;
       z-index: 9;
       position: relative;
       img {
         width: 100%;
         height: 100%;
         object-fit: cover;
-      }
-      .gray-shadow {
-        width: 100%;
-        height: 100%;
-        background: rgb(51, 51, 51);
-        position: absolute;
-        top: 0;
-        opacity: 0.5;
-        transition: 0.2s;
-      }
-      .gray-shadow:hover {
-        opacity: 0;
       }
     }
     .about-desc {
@@ -224,7 +205,6 @@ main {
   }
 }
 
-// Start knowledge
 #knowledge {
   margin-bottom: 8em;
   padding: 1em 0;
@@ -256,36 +236,55 @@ main {
   }
 }
 
-// Start experience
-#experience {
+#works {
   margin-bottom: 10em;
-  .experience-wrap {
+  .works-wrap {
     margin: 2em 0;
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
     background-color: $body-color;
-    grid-gap: 5em;
-    .experience-box {
+    row-gap: 5em;
+    column-gap: 2em;
+    .project-box {
       z-index: 9;
       background-color: $body-color;
       border: 1px solid $border-color;
-      padding: 3em 2em;
-      display: flex;
-      justify-content: center;
-      flex-direction: column;
+      .project-info {
+        padding: 2em;
+        .project-title {
+          display: flex;
+          justify-content: space-between;
+          h5 {
+            color: $font-light-color;
+            font-size: 17px;
+            line-height: 26px;
+            margin-bottom: 0.4em;
+          }
+          i {
+            font-size: 1.2em;
+            color: $font-light-color;
+          }
+          i:hover {
+            color: $font-dark-color;
+          }
+          .github-project {
+            margin-left: 10px;
+          }
+        }
+      }
+      img {
+        width: 100%;
+        height: 220px;
+        object-fit: cover;
+      }
       h6 {
         font-size: 14px;
         line-height: 20px;
         color: $second-color;
         margin-bottom: 0.3em;
       }
-      h5 {
-        color: $font-light-color;
-        font-size: 17px;
-        line-height: 26px;
-        margin-bottom: 0.4em;
-      }
+
       p {
         font-size: 16px;
         line-height: 26px;
@@ -294,7 +293,6 @@ main {
   }
 }
 
-// Start youtube section
 #youtube {
   margin-bottom: 7em;
   padding: 1em 0;
@@ -358,92 +356,6 @@ main {
   }
 }
 
-//Start work projects
-#work {
-  margin-bottom: 8em;
-  padding: 1em 0;
-  .archive-projects-wrap {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .work-wrap {
-    margin: 2em 0;
-    width: 100%;
-    border-top: 1px solid $border-color;
-    border-bottom: 1px solid $border-color;
-    position: relative;
-    .project-wrap {
-      width: 100%;
-      justify-content: space-between;
-      border-top: 1px solid $border-color;
-      border-bottom: 1px solid $border-color;
-      z-index: 9;
-      background: $body-color;
-      position: relative;
-      .mobile-project-wrap {
-        width: 100%;
-        position: relative;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        background-color: $body-color;
-        z-index: 9;
-        .image-project {
-          padding: 1em;
-          z-index: 9;
-          .image-box {
-            position: relative;
-            width: 100%;
-            margin-bottom: 1em;
-            img {
-              height: 100%;
-              width: 100%;
-              object-fit: cover;
-            }
-            .shadow-green {
-              width: 100%;
-              height: 100%;
-              background: $second-color;
-              opacity: 0;
-              position: absolute;
-              top: 0;
-              z-index: 99;
-              transition: 0.4s;
-              display: flex;
-              justify-content: center;
-              align-items: center;
-              i {
-                font-size: 40px;
-                color: #202020;
-              }
-            }
-          }
-          .image-box:hover .shadow-green {
-            opacity: 0.5;
-          }
-          .project-title {
-            margin-top: 1em;
-            color: $font-light-color;
-            text-align: center;
-            font-size: 19px;
-            line-height: 28px;
-            z-index: 9;
-          }
-        }
-        .border-right {
-          border-right: 1px solid $border-color;
-        }
-      }
-    }
-    .right-image {
-      flex-direction: row-reverse;
-      .info-project {
-      }
-    }
-  }
-}
-
-// Start contact
 #contact {
   margin-bottom: 8em;
   .contact-wrap {
@@ -483,7 +395,6 @@ main {
   }
 }
 
-// Start footer
 footer {
   .footer-wrap {
     display: flex;
