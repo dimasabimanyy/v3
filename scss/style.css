@@ -816,7 +816,6 @@ nav .toggle .line3 {
 .btn-archive:hover,
 .btn-resume:hover {
   cursor: pointer;
-  border: 2px solid #4bffa5;
   color: #000;
 }
 
