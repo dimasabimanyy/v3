@@ -16,7 +16,7 @@
 ![Website Screenshot](https://raw.githubusercontent.com/dimasabimanyy/v3/master/images/homepage-ss.png)
 
 ## What I used
-- [Visual Studio Code](https://www.sublimetext.com/3) my ride-or-die
+- [Visual Studio Code](https://code.visualstudio.com/) my ride-or-die
 - [Github Pages](https://pages.github.com/) for easy push-to-deploy hosting
 - [Sass](http://sass-lang.com/) for less time-consuming and more modular CSS
 - [Unsplash](https://unsplash.com/) for stock photos
