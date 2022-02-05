@@ -24,6 +24,12 @@ a {
   font-family: $font-stack;
 }
 
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 // Custom Scrollbar
 ::-webkit-scrollbar {
   width: 12px;
