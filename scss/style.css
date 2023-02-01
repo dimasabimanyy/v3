@@ -678,6 +678,12 @@ footer .footer-wrap .copyright:hover {
   color: #ffffff;
 }
 
+.note-design {
+  margin-top: .9rem;
+  font-size: .95rem;
+  color: #9f9e9e;
+}
+
 @media screen and (max-width: 950px) {
   nav {
     z-index: 99;
