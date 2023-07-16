@@ -17,7 +17,6 @@
 
 ## What I used
 - [Visual Studio Code](https://code.visualstudio.com/) my ride-or-die
-- [Github Pages](https://pages.github.com/) for easy push-to-deploy hosting
 - [Sass](http://sass-lang.com/) for less time-consuming and more modular CSS
 - [Unsplash](https://unsplash.com/) for stock photos
 - [Aos.js](https://github.com/michalsnik/aos) for animation while scrolling effect
